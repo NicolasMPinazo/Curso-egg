@@ -53,8 +53,14 @@ public class Circumference {
     public Double perimetro(){
         Double PI = Math.PI;
         return 2*PI*getRadio();
-        
-        
+                
     }
+
+    @Override
+    public String toString() {
+        return "Circumference{" + "radio=" + radio + '}';
+    }
+    
+    
 
 }
