@@ -1,22 +1,22 @@
-
 package com.mycompany.poo;
 
-import com.mycompany.poo.Entidades.Libro;
+
+import com.mycompany.poo.Entidades.Rectangle;
 
 public class POO {
 
     public static void main(String[] args) {
         
-        Libro libro = new Libro();
+        Rectangle rectangle = new Rectangle();
         
-        libro.crearLibro();
-        
-        System.out.println(libro.toString());
-        
-        
-        
+        rectangle.crearRectangle();
+        rectangle.calculatePerimeter();
+        rectangle.calculatesurface();
+        rectangle.drawRectangle();
         
         
+        
+
        
-    }
+}
 }
