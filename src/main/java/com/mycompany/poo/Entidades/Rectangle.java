@@ -71,16 +71,20 @@ public class Rectangle {
     }
     
     public  void drawRectangle(){
-        
-        for (int i = 1; i <= getHeight(); i++) {    // Recorre las filas del rectángulo
-        for (int j = 1; j <= getBase(); j++) {   // Recorre las columnas del rectángulo
-        if (i == 1 || i == getBase() || j == 1 || j == getHeight()) {   // Si está en el borde del rectángulo, imprime un asterisco
+        // Recorre las filas del rectángulo
+        for (int i = 1; i <= getHeight(); i++) {
+        // Recorre las columnas del rectángulo
+        for (int j = 1; j <= getBase(); j++) {
+        // Si está en el borde del rectángulo, imprime un asterisco
+        if (i == 1 || i == getBase() || j == 1 || j == getHeight()) {   
         System.out.print("*");
-        } else {    // Si no está en el borde del rectángulo, imprime un espacio vacío
+        } else {
+        // Si no está en el borde del rectángulo, imprime un espacio vacío    
         System.out.print(" ");
         }
         }
-        System.out.println();    // Salto de línea al final de cada fila
+        // Salto de línea al final de cada fila
+        System.out.println();    
         }  
     }
 
